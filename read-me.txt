@@ -1,0 +1,12 @@
+1. Clone https://github.com/cytopia/devilbox
+2. Copy C:\devilbox\env-example to C:\devilbox\.env
+3. Edit C:\devilbox\.env
+
+# Load traditional lamp stack only
+$ docker-compose up httpd php mysql
+
+# Add redis to the running stack
+$ docker-compose up redis
+
+# Stop MySQL from the current stack
+$ docker-compose stop mysql
